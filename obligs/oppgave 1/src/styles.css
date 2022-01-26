@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #eee;
+    font-family: "Dancing Script", cursive;
+}
+
+#app {
+    width: 100%;
+    max-width: 800px;
+    min-height: 100px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 3rem;
+    color: #333;
+}
