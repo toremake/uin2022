@@ -31,7 +31,7 @@ const myList = ["item one", "item two", "item three"];
 function createList() {
     var listhtml = "";
     for (let i = 0; i < myList.length; i++) {
-        listhtml += "<li>" + myList[i] + "</li>";
+        listhtml += `<li>${myList[i]}</li>`;
     }
     document.getElementById("ul").innerHTML = listhtml;
 }
@@ -47,7 +47,7 @@ const createTagButton = document.getElementById("create");
 //     skriver ut til #placeholder
 function createTag(tag, text) {
     document.getElementById("placeholder").innerHTML =
-        "<" + tag + ">" + text + "</" + tag + ">";
+        `<${tag}>${text}</${tag}>`;
 }
 //TMA: eventlistener på knapp, kjører createTag-funksjonen.
 createTagButton.addEventListener("click", function() {
