@@ -45,6 +45,7 @@ function App() {
             </section>
             <section className="todos">
                 {/* TMA: går gjennom todos-state-array med .map, henter TodoCard-komponent for visning av hver todo. Sender key (mandatory) og todo-info som props*/}
+                {/* TMA: Lagt til index og setComplete som props for å kunne endre status (utført) per todo */ }
                 {todos.map((todo, index) => <TodoCard key={index} index={index} setComplete={setComplete} todo={todo} />)}
             </section>
         </div>
