@@ -11,7 +11,7 @@ export default function Form({onSubmit, handleChange, formData}) {
             <input type="text" name="title" value={formData['title']} onChange={handleChange} id="title" />
             <label htmlFor="description">Beskrivelse</label>
             <textarea name="description" id="description" onChange={handleChange} rows="8" value={formData['description']}></textarea>
-            <p className="buttonHolder"><button type="submit">Legg til</button></p>
+            <p className="buttonHolder"><button className="add" type="submit">Legg til</button></p>
         </form>
     )
 }

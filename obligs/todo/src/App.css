@@ -54,13 +54,44 @@ textarea {
   text-align: right;
 }
 button {
+  background: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 1rem;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 180px;
+  height: 40px;
+}
+button.add {
   background: limegreen;
   color: white;
   padding: 10px;
   border: none;
-  border-radius: 10px;
   font-size: 1rem;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  position: relative;
 }
+button.add:hover {
+  background: forestgreen;
+}
+.completed button {
+  background: limegreen;
+  border-radius: 0px;
+  font-size: 0.8rem;
+  padding: 5px;
+  position: absolute;
+  bottom: calc(100% - 30px);
+  right: 0px;
+  width: 80px;
+  height: 30px;
+}
+
 .todos {
   box-sizing: border-box;
   display: flex;
@@ -70,11 +101,15 @@ button {
 
 .todo {
   /*flex: 1;*/
+  position: relative;
   width: 24%;
   box-sizing: border-box;
-  border: 1px solid rgba(50, 205, 50, 0.3);
-  border-radius: 10px;
-  box-shadow: 1px 1px 6px rgba(50, 205, 50, 0.2);
-  padding: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.3);
+  box-shadow: 1px 1px 6px rgba(33, 33, 33, 0.2);
+  padding: 10px 10px 70px 10px;
   margin-bottom: 20px;
+}
+.todo.completed {
+  border: 1px solid rgba(50, 205, 50, 0.3);
+  box-shadow: 1px 1px 6px rgba(50, 205, 50, 0.2);
 }
