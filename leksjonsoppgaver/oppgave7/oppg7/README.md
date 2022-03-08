@@ -1,3 +1,7 @@
+# Marius kommentarer
+
+For å få til muligheten til å bla i treff fra APIet (returnerer kun 10 treff av gangen), måtte jeg ha tak i hele objektet som ble returnert. Dette gjorde at jeg ikke kunne splice direkte i useEffect for å få fem treff ved innlasting av siden. Dette ble løst ved å sjekke om det var utført et søk (brukte search-state) i Movies-komponenten; dersom det ikke er søkt, splicer vi 5 treff, ellers lister vi alle (10 og 10).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
