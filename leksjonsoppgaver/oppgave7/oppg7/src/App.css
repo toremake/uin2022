@@ -99,11 +99,16 @@ label {
   box-sizing: border-box;
   width: 100%;
 }
+label span {
+width: 100%;
+display: inline-block;
+clear: both;
+}
 input {
   border: 2px solid #333;
   color: #eee;
-  width: 100%;
-  margin: .5rem 0;
+  width: calc(100% - 110px);
+  margin: .5rem 5px .5rem 0;
   padding: 1rem;
   color: #333;
   border-radius: 5px;
@@ -115,6 +120,9 @@ color: #fff;
 padding: 1rem;
 border-radius: 5px;
 cursor: pointer;
+}
+.searchbox button {
+width: 100px;
 }
 button:hover {
   background: purple;

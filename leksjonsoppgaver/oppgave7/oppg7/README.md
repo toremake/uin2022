@@ -7,10 +7,12 @@ Utfør et søk for å få opp søkemeta (totalt antall treff, knapper for å bla
 ## Småting gjort for bedre brukeropplevelse
 - Tooltips på knapper for å bla i treff ved første/siste side
 - Disable knapper for å bla når man er på første/siste side
-- Placeholder-poster dersom api-et ikke leverer et poster-bilde (
+- Placeholder-poster dersom api-et ikke leverer et poster-bilde (placeholder.com)
+- Link til IMDB-profil
 
 ## Ting som kunne vært gjort med enda mer tid
 - Utregning av visningsantall på siste side. Nå jukser jeg ved å gange opp sideantallet med 10, men dette vil alltid vise et rundt tall. Eks. På side 2 ved søk på "Spiderman" viser metadataene "Film 11-20", mens sannheten er at det vises 11-19 (19 er høyeste treff)
+- Link til IMDB-profil byttes med innhenting av mer filminformasjon via api-kall og vises direkte i app
 
 # Getting Started with Create React App
 

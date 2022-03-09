@@ -5,10 +5,10 @@ export default function Search({search, setSearch, setActiveSearch, getMovies}) 
   }
     return(
     <div className="searchbox">
-        <label>Søk etter film
+        <label><span>Søk etter film</span>
             <input type="text" value={search} onChange={handleSearchChange} />
         </label>
-        <button type="button" onClick={getMovies}>Søk etter film</button>
+        <button type="button" onClick={getMovies}>Søk</button>
     </div>
     )
 }

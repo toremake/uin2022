@@ -22,7 +22,7 @@ export default function Main() {
     fetch(`https://www.omdbapi.com/?apikey=4e4535d6&s=star wars&type=movie&page=${page}`)
     .then((response) => response.json())
     .then((data) => setMovies(data))
-  }, [])
+  })
 
   /* TMA: Funksjon ved trykk på søkeknapp */
   const getMovies = async () => {
@@ -43,7 +43,7 @@ export default function Main() {
 
   return (
     <main>
-        <h1>Filmsøk</h1>
+        <h1><img src="movie-tape-icon-32-145165.png" alt="Filmsøk" /> Filmsøk</h1>
         <Search search={search} setSearch={setSearch} getMovies={getMovies} setActiveSearch={setActiveSearch} />
         <Movies movies={movies} page={page} setPage={setPage} setMovies={setMovies} search={search} activeSearch={activeSearch} setSearchString={setSearchString} searchString={searchString} />
     </main>
