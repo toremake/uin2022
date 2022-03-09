@@ -1,6 +1,16 @@
 # Marius kommentarer
 
-For å få til muligheten til å bla i treff fra APIet (returnerer kun 10 treff av gangen), måtte jeg ha tak i hele objektet som ble returnert. Dette gjorde at jeg ikke kunne splice direkte i useEffect for å få fem treff ved innlasting av siden. Dette ble løst ved å sjekke om det var utført et søk (brukte search-state) i Movies-komponenten; dersom det ikke er søkt, splicer vi 5 treff, ellers lister vi alle (10 og 10).
+For å få til muligheten til å bla i treff fra APIet (returnerer kun 10 treff av gangen), måtte jeg ha tak i hele objektet som ble returnert. Dette gjorde at jeg ikke kunne splice direkte i useEffect for å få fem treff ved innlasting av siden, og har hatt noen utfordringer med å kun hente inn fem treff ved første innlasting av appen.
+
+Utfør et søk for å få opp søkemeta (totalt antall treff, knapper for å bla i treff, opptelt visning av filmer etc.). Eksempler på søkeord som viser funksjonalitet er "green" (1734 treff) og "spiderman (19 treff).
+
+## Småting gjort for bedre brukeropplevelse
+- Tooltips på knapper for å bla i treff ved første/siste side
+- Disable knapper for å bla når man er på første/siste side
+- Placeholder-poster dersom api-et ikke leverer et poster-bilde (
+
+## Ting som kunne vært gjort med enda mer tid
+- Utregning av visningsantall på siste side. Nå jukser jeg ved å gange opp sideantallet med 10, men dette vil alltid vise et rundt tall. Eks. På side 2 ved søk på "Spiderman" viser metadataene "Film 11-20", mens sannheten er at det vises 11-19 (19 er høyeste treff)
 
 # Getting Started with Create React App
 

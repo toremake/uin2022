@@ -4,11 +4,11 @@ export default function Search({search, setSearch, setActiveSearch, getMovies}) 
     setSearch(event.target.value);
   }
     return(
-    <>
+    <div className="searchbox">
         <label>Søk etter film
             <input type="text" value={search} onChange={handleSearchChange} />
         </label>
         <button type="button" onClick={getMovies}>Søk etter film</button>
-    </>
+    </div>
     )
 }
