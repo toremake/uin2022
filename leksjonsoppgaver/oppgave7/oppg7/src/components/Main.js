@@ -22,9 +22,14 @@ export default function Main() {
     fetch(`https://www.omdbapi.com/?apikey=4e4535d6&s=star wars&type=movie&page=${page}`)
     .then((response) => response.json())
     .then((data) => setMovies(data))
-  })
+  },[])
 
-  /* TMA: Funksjon ved trykk på søkeknapp */
+  /* 
+   * TMA: Funksjon ved trykk på søkeknapp 
+   * Trykk på søkeknapp initierer et (nytt) søk, altså må
+   * page settes tilbake til 1, activeSearch bli true
+   * og searchString må lagres
+   */
   const getMovies = async () => {
     if(search === "") {
         return null;
