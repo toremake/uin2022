@@ -4,6 +4,8 @@ import Search from './Search';
 
 export default function Main() {
     /* 
+     * TMA: Kommentarer til oppgaven er lagt i readme.md
+     * 
      * STATES 
      * movies: lagrer returnert data fra api
      * search: holder verdien fra søkefelt

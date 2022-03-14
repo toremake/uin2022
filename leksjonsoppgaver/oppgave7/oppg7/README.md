@@ -1,6 +1,8 @@
 # Marius kommentarer
 
-For å få til muligheten til å bla i treff fra APIet (returnerer kun 10 treff av gangen), måtte jeg ha tak i hele objektet som ble returnert. Dette gjorde at jeg ikke kunne splice direkte i useEffect for å få fem treff ved innlasting av siden, og har hatt noen utfordringer med å kun hente inn fem treff ved første innlasting av appen.
+For å få til muligheten til å bla i treff fra APIet (returnerer kun 10 treff av gangen), måtte jeg ha tak i hele objektet som ble returnert. Dette gjorde at jeg ikke kunne splice direkte i useEffect for å få fem treff ved innlasting av siden, og har hatt noen utfordringer med å kun hente inn fem treff ved første innlasting av appen. Avklarte at vedlagte løsning er OK med Marius Wallin (viser Star Wars som søk ved oppstart, men viser de ti første treffene i stedet for fem som oppgaven beskriver).
+
+Dette kunne vært løst ved å dele opp paginering i to deler lokalt i appen, men dette er mer grisete enn fornuftig, så jeg valgte å la løsningen stå som den står.
 
 Utfør et søk for å få opp søkemeta (totalt antall treff, knapper for å bla i treff, opptelt visning av filmer etc.). Eksempler på søkeord som viser funksjonalitet er "green" (1734 treff) og "spiderman (19 treff).
 
